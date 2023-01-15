@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Documentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="menu-toggle">
+        <div class="hamburger">
+          <span></span>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <nav id="navbar">
+          <header>
+            <a id="title" class="nav-link" href="#"
+              ><i class="fa-brands fa-markdown"></i>Markdown Documentation</a
+            >
+          </header>
+          <ul>
+            <li>
+              <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Headers">Headers</a></li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Text">Text</a></li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Lists">Lists</a></li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Links">Links</a></li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Blockquotes">Blockquotes</a></li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Tables">Tables</a></li>
+          </ul>
+          <ul>
+            <li><a class="nav-link" href="#Code-Blocks">Code Blocks</a></li>
+          </ul>
+          <footer>
+            <address>
+              <ul>
+                <li>
+                  <a
+                    class="nav-link"
+                    href="https://github.com/namajaco/Markdown-Technical-Documentation"
+                    ><i class="fa-sharp fa-solid fa-code"></i> Source code</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="https://github.com/namajaco"
+                    ><i class="fa-brands fa-github"></i> My GitHub profile</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </footer>
+        </nav>
+      </aside>
+
+      <main id="main-doc">
+        <div class="header">
+          <i class="fa-brands fa-markdown fa-2x"></i>
+          <h1>Markdown Documentation</h1>
+        </div>
+        <section id="Introduction" class="main-section">
+          <header>Introduction</header>
+          <article>
+            <p>
+              <b>Markdown</b> is a <b>popular</b>, <b>lightweight</b> and
+              <b>easy to use</b> markup language created by
+              <b>John Gruber</b> in <b>2004</b>.
+            </p>
+            <br />
+            <p>
+              It is very similar to <b>HTML (HyperText Markup Language)</b>, and
+              is <b>widely used</b> for <b>web content</b>.
+            </p>
+            <br />
+            <p>
+              This documentation will act as a <b>cheatsheet</b> to demonstrate
+              how you can use Markdown.
+            </p>
+            <br />
+            <p>
+              The <b>literal way</b> to <b>type out Markdown code</b> will be
+              <b>presented first</b> in the <b>code boxes</b>, and the
+              <b>visual output</b> will be shown <b>below it</b>.
+            </p>
+            <br />
+            <p>
+              <strong><em>Note</em></strong
+              >: This website was created for <b>my own learning purposes</b>,
+              <b><em>not</em></b> meant for actual use.<br /><b>Instead</b> you
+              can use <b>this comprehensive</b>
+              <a href="https://www.markdownguide.org/" target="_blank"
+                >Markdown guide</a
+              >
+              to learn how to use Markdown.
+            </p>
+          </article>
+        </section>
+
+        <section id="Headers" class="main-section">
+          <header>Headers</header>
+          <article>
+            <p>
+              To create headers, use the
+              <b>hash/pound sign <mark>#</mark></b> followed by a
+              <b>space</b> before text.
+            </p>
+
+            <div class="code-wrapper">
+              <code>
+                # Header 1<br />
+                ## Header 2<br />
+                ### Header 3<br />
+                #### Header 4<br />
+                ##### Header 5<br />
+                ######Header 6<br />
+                <span class="md-h1">Header 1</span><br />
+                <span class="md-h2">Header 2</span><br />
+                <span class="md-h3">Header 3</span><br />
+                <span class="md-h4">Header 4</span><br />
+                <span class="md-h5">Header 5</span><br />
+                <span class="md-h6">Header 6</span><br />
+              </code>
+            </div>
+          </article>
+        </section>
+
+        <section id="Text" class="main-section">
+          <header>Text</header>
+          <article>
+            <h2>Emphasis</h2>
+            <p>
+              To create bold text use, <b>2 asterisks <mark>**</mark></b
+              >, or <b>2 underscores <mark>__</mark></b> enclosing text.
+            </p>
+            <div class="code-wrapper">
+              <code>**Bold text**<br /><b>Bold text</b></code>
+            </div>
+            <p><b>or</b></p>
+            <div class="code-wrapper">
+              <code>__Bold text__<br /><b>Bold text</b></code>
+            </div>
+
+            <h2>Italic</h2>
+            <p>
+              To create italic text, use <b>1 asterisk <mark>*</mark></b
+              >, or
+              <b>1 underscore <mark>_</mark></b>
+              enclosing text.
+            </p>
+            <div class="code-wrapper">
+              <code>*Italic text*<br /><i>Italic text</i></code>
+            </div>
+
+            <h2>Combined Bold and Italic</h2>
+            <p>
+              To create combined bold and italic text, use
+              <b>1 underscore <mark>_</mark></b> and
+              <b>2 asterisks <mark>**</mark></b
+              >, or use <b>3 underscores <mark>___</mark></b
+              >, or use <b>3 asterisks <mark>***</mark></b> enclosing text.
+            </p>
+            <div class="code-wrapper">
+              <code>
+                _**Bold and italic text**_<br />
+                <b><i>Bold and italic text</i></b></code
+              >
+            </div>
+            <p><b>or</b></p>
+            <div class="code-wrapper">
+              <code>
+                ***Bold and italic text***<br />
+                <b><i>Bold and italic text</i></b></code
+              >
+            </div>
+
+            <p><b>or</b></p>
+            <div class="code-wrapper">
+              <code>
+                ___Bold and italic text___<br />
+                <b><i>Bold and italic text</i></b></code
+              >
+            </div>
+          </article>
+        </section>
+
+        <section id="Lists" class="main-section">
+          <header>Lists</header>
+          <article>
+            <h2>Bullet List</h2>
+            <p>
+              To create a bullet list, use a <b>hyphen <mark>-</mark></b
+              >, or a <b>plus <mark>+</mark></b
+              >, or an <b>asterisk <mark>*</mark></b> on a new line before an
+              item in the list.
+            </p>
+            <div class="code-wrapper">
+              <code>
+                - List item<br />
+                + List item<br />
+                * List item<br />
+                <ul>
+                  <li>List item</li>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ul>
+              </code>
+            </div>
+            <h2>Numbered List</h2>
+            <p>
+              To create a numbered list, use
+              <b>numbers starting from <mark>1</mark></b> followed by a
+              <b>period <mark>.</mark></b> on a new line before an item in the
+              list.
+            </p>
+            <div class="code-wrapper">
+              <code>
+                1. List item<br />
+                2. List item<br />
+                3. List item<br />
+                <ol>
+                  <li>List item</li>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ol>
+              </code>
+            </div>
+          </article>
+        </section>
+
+        <section id="Links" class="main-section">
+          <header>Links</header>
+          <article>
+            <p>
+              To create a link, first enclose the display text in
+              <b>square brackets <mark>[]</mark></b> followed by the page url in
+              <b>parenthesis <mark>()</mark></b
+              >.
+            </p>
+            <div class="code-wrapper">
+              <code>
+                [Link text](Link URL)<br />
+                <a href="">Link text</a>
+              </code>
+            </div>
+          </article>
+        </section>
+
+        <section id="Blockquotes" class="main-section">
+          <header>Blockquotes</header>
+          <article>
+            <p>
+              To create blockquotes, use the
+              <b>greater than symbol <mark>></mark></b> on a new line followed
+              by text.
+            </p>
+            <div class="code-wrapper">
+              <code>
+                > Blockquote text<br />
+                <blockquote><p>Blockquote text</p></blockquote>
+              </code>
+            </div>
+          </article>
+        </section>
+
+        <section id="Tables" class="main-section">
+          <header>Tables</header>
+          <article>
+            <p>
+              To create a table, use the <b>pipe symbol <mark>|</mark></b> to
+              create columns, and at <b>at least 3 hyphens <mark>-</mark></b> to
+              create lines.
+            </p>
+            <div class="code-wrapper">
+              <code>
+                |Header 1 |Header 2|<br />
+                | ------- | ------ |<br />|data row |data row |
+                <br />
+                <span>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>data row</td>
+                        <td>data row</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </span>
+              </code>
+            </div>
+          </article>
+        </section>
+
+        <section id="Code-Blocks" class="main-section">
+          <header>Code Blocks</header>
+          <article>
+            <p>
+              To create code blocks, enclose text using <b>backticks</b>
+              <mark>`</mark>.
+            </p>
+            <div class="code-wrapper">
+              <code
+                >`Code block`<br />
+                <mark>Code block</mark>
+              </code>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script>
+      const menu_toggle = document.querySelector(".menu-toggle");
+      const sidebar = document.querySelector(".sidebar");
+
+      menu_toggle.addEventListener("click", () => {
+        menu_toggle.classList.toggle("is-active");
+        sidebar.classList.toggle("is-active");
+      });
+    </script>
+  </body>
+</html>
